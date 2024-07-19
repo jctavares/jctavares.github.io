@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'nanum';
+    src: url('nanum.eot');
+    src: url('nanum.eot?#iefix') format('embedded-opentype'),
+         url('nanum.woff2') format('woff2'),
+         url('nanum.woff') format('woff'),
+         url('nanum.ttf')  format('truetype'), 
+         url('nanum.svg#CustomFont') format('svg');
+  }
+  
+  @font-face {
+    .libre-baskerville-regular {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 410;
+      font-style: normal;
+    }
+    
+    .libre-baskerville-bold {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .libre-baskerville-regular-italic {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }    
+
+
+
+  h1, h2, h3 {
+    font-family: 'nanum', serif;
+  }
+
+p, li{
+  font-size: 16px;
+}
+
+li{
+  padding: 8px
+}
+
+p{
+  margin:0;
+  padding:0;
+}
+
+  html, body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+  body {
+    color: rgb(89, 78, 60);
+    background-color: #F8F6F0;
+    font-family: "Libre Baskerville";
+}
+
+  .column {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .left{
+    order: 1;
+    float: left;
+    margin-right: 40px;
+}
+
+.right {
+    order: 2;
+    float: right;
+    font-size:18px;
+}
+
+@media (max-width: 768px) {
+  .column {
+      flex-direction: column;
+      align-items: flex-start;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .menu {
+      margin-top: 10px;
+  }
+}
+
+.menu{
+    font-family: 'nanum', serif;
+}
+
+.menu .active:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #568203;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.contents {
+  float: left;
+  text-align: left;
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.profile {
+    text-align: left;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact {
+  display: flex;
+  vertical-align: baseline;
+}
+
+.work{
+  display: flex;
+  align-content: baseline;
+  margin-bottom: 60px;
+}
+
+.work-text {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .work {
+    flex-direction: column;
+  }
+
+  .work-text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.background{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.textleft{
+  text-align: left;
+}
+
+.works a {
+  color: #568203;
+}
